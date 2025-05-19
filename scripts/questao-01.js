@@ -6,7 +6,7 @@ let menoresDeIdade = 0;
 for (let i = 0; i < idades.length; i++) {
     //Condição para contadores de maior e menor de idade.
     if (idades[i] >= 18) {
-        maioresDeIdade++
+        maioresDeIdade++;
     }
 }
 

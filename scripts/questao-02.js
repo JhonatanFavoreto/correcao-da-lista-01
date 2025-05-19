@@ -11,7 +11,6 @@ for (let i = 0; i < numeros.length; i++) {
     } else {
         numerosImpares++;
     }
-
     //Codicional para maiores que 20
     if (numeros[i] > 20) {
         maioresQue20++;
