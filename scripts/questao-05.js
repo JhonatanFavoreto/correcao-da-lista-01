@@ -3,6 +3,9 @@ const precosComDesconto = [];
 let contadorArrayPrecoDesconto = 0;
 let preco = 0;
 let desconto = 0;
+let somaTotalPrecos = 0;
+let somaTotalPrecosComDesconto = 0;
+let perda = 0;
 
 //Varredura de array com laço de repetição
 for (let i = 0; i < precos.length; i++) {
@@ -13,6 +16,11 @@ for (let i = 0; i < precos.length; i++) {
     }
     precosComDesconto[contadorArrayPrecoDesconto] = preco;
     contadorArrayPrecoDesconto++;
-} 
+
+    somaTotalPrecos += precos[i];
+    somaTotalPrecosComDesconto += precosComDesconto[i];
+} perda = somaTotalPrecos - somaTotalPrecosComDesconto;
+
 console.table(precos);
 console.table(precosComDesconto);
+console.log(`A loja vai perder: R${perda.toFixed(2)}.`)
